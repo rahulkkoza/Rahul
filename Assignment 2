@@ -1,0 +1,54 @@
+Assignment 
+
+1.	Write a program which takes a tuple as an input and remove the first and last element from the tuple. And returns a tuple as an output. (hint: convert the tuple into a list)
+
+tup = tuple(input("enter tuple"))
+print(tup)
+lis = list(tup) 
+del lis[0] 
+del lis[-1]
+tup = tuple(lis)
+print(tup)
+
+
+2.	Given a list of numbers, determine the odd and even numbers from the list and print 2 separate list of numbers.
+              
+              lis1=list(map(int,input('Enter elements of List: ').split()))
+              EvenList=[]
+               OddList=[]
+               for j in lis1:
+                      if j%2==0:
+                        EvenList.append(j)
+                       else:
+                        OddList.append(j)
+        print('List of even number: ',EvenList)
+        print('List of odd number: ',OddList)
+
+
+3.	Given a Python list, remove all occurrence of 20 from the list : list1 = [5, 20, 15, 20, 25, 50, 20]
+
+
+            list1 = [5, 20, 15, 20, 25, 50, 20]
+           def rem(sampleList, val):
+           return [value for value in sampleList if value != val]
+          resList = rem(list1, 20)
+           print(resList)
+
+4.	Take 2 lists and create a dictionary with one list being the keys other being values.
+            test_keys = ["Sam", "Jenny", "Sachin"] 
+             test_values = [1, 2, 3] 
+            print ("Key list is : " + str(test_keys)) 
+             print ("Value list is : " + str(test_values)) 
+            res = dict(zip(test_keys, test_values)) 
+            print ("Resulting dictionary is : " +  str(res)
+
+5.	Take a paragraph as an input and store each word into a set and print the number of unique words. (Hint: use split method to convert each word into an item in a list)
+
+
+           def main():
+                p = input("Enter your sentence: ")
+               words = p.split(" ")
+               print("the words are ",words)
+               wordCount = len(words)
+               print ("The word count is:", wordCount)
+            main()
